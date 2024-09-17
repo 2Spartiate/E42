@@ -1,16 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gderrien <gaetan.derrien@gmail.com>        +#+  +:+       +#+        */
+/*   By: gderrien <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/15 09:01:24 by gderrien          #+#    #+#             */
-/*   Updated: 2024/09/15 09:18:57 by gderrien         ###   ########.fr       */
+/*   Created: 2024/09/17 08:55:52 by gderrien          #+#    #+#             */
+/*   Updated: 2024/09/17 09:03:17 by gderrien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ft(int *nbr)
+char	*ft_strcpy(char *dest, char *src)
 {
-	*nbr = 42;
+	int	i;
+
+	i = 0;
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }

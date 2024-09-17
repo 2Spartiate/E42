@@ -1,16 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gderrien <gaetan.derrien@gmail.com>        +#+  +:+       +#+        */
+/*   By: gderrien <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/15 09:01:24 by gderrien          #+#    #+#             */
-/*   Updated: 2024/09/15 09:18:57 by gderrien         ###   ########.fr       */
+/*   Created: 2024/09/17 11:01:11 by gderrien          #+#    #+#             */
+/*   Updated: 2024/09/17 11:41:13 by gderrien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ft(int *nbr)
+int	ft_str_is_uppercase(char *str)
 {
-	*nbr = 42;
+	int	i;
+
+	i = 0;
+	while (str[i])
+	{
+		if (!(str[i] >= 'A' && str[i] <= 'Z'))
+			return (0);
+		i++;
+	}
+	return (1);
 }

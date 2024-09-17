@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gderrien <gaetan.derrien@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -24,3 +24,11 @@ void	ft_rev_int_tab(int *tab, int size)
 		i++;
 	}
 }
+
+//int main(void) 
+	//{
+	//int tab[] = {1, 2, 3, 4, 5};
+	//int size = 5;
+	//ft_rev_int_tab(tab, size);
+	//return 0;
+	//}

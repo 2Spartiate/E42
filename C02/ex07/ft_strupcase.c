@@ -1,16 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gderrien <gaetan.derrien@gmail.com>        +#+  +:+       +#+        */
+/*   By: gderrien <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/15 09:01:24 by gderrien          #+#    #+#             */
-/*   Updated: 2024/09/15 09:18:57 by gderrien         ###   ########.fr       */
+/*   Created: 2024/09/17 11:58:51 by gderrien          #+#    #+#             */
+/*   Updated: 2024/09/17 11:58:53 by gderrien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ft(int *nbr)
+char	*ft_strupcase(char *str)
 {
-	*nbr = 42;
+	int		i;
+	char	c;
+
+	i = 0;
+	while (str[i])
+	{
+		c = str[i];
+		if (c >= 'a' && c <= 'z')
+			str[i] -= 32;
+		i++;
+	}
+	return (str);
 }

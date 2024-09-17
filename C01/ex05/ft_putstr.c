@@ -21,5 +21,5 @@ void	ft_putstr(char *str)
 	{
 		write (1, &str[i], 1);
 		i++;
-	}	
+	}
 }

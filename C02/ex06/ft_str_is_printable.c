@@ -1,16 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gderrien <gaetan.derrien@gmail.com>        +#+  +:+       +#+        */
+/*   By: gderrien <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/15 09:01:24 by gderrien          #+#    #+#             */
-/*   Updated: 2024/09/15 09:18:57 by gderrien         ###   ########.fr       */
+/*   Created: 2024/09/17 11:48:53 by gderrien          #+#    #+#             */
+/*   Updated: 2024/09/17 11:48:56 by gderrien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ft(int *nbr)
+int	ft_str_is_printable(char *str)
 {
-	*nbr = 42;
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (!(str[i] >= 32 && str [i] <= 126))
+		{
+			return (0);
+		}
+		i++;
+	}
+	return (1);
 }
