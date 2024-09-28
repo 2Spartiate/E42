@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_H
-# define FT_H
+#ifndef C08_EX00_FT_H
+#define C08_EX00_FT_H
 
 void	ft_putchar(char c);
 void	ft_swap(int *a, int *b);
