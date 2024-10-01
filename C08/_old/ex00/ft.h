@@ -1,17 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_abs.h                                           :+:      :+:    :+:   */
+/*   ft.h                                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gderrien <gderrien@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gderrien <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/28 05:27:09 by gderrien          #+#    #+#             */
-/*   Updated: 2024/09/28 07:18:32 by gderrien         ###   ########.fr       */
+/*   Created: 2024/09/26 10:32:26 by gderrien          #+#    #+#             */
+/*   Updated: 2024/09/26 17:47:00 by gderrien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#define ABS(Value) ({ \
-    typeof(Value) _val = (Value); \
-    if (_val < 0) _val = -_val; \
-    _val; \
-})
+#ifndef C08_EX00_FT_H
+#define C08_EX00_FT_H
+
+void	ft_putchar(char c);
+void	ft_swap(int *a, int *b);
+void	ft_putstr(char *str);
+int		ft_strlen(char *str);
+int		ft_strcmp(char *s1, char *s2);
+
+#endif

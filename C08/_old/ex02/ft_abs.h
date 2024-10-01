@@ -3,15 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_abs.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gderrien <gderrien@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gderrien <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/28 05:27:09 by gderrien          #+#    #+#             */
-/*   Updated: 2024/09/28 07:18:32 by gderrien         ###   ########.fr       */
+/*   Created: 2024/09/24 13:48:50 by gderrien          #+#    #+#             */
+/*   Updated: 2024/09/24 17:18:30 by gderrien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#define ABS(Value) ({ \
-    typeof(Value) _val = (Value); \
-    if (_val < 0) _val = -_val; \
-    _val; \
-})
+#ifndef FT_ABS_H
+# define FT_ABS_H
+
+int	abs(int nb)
+{
+	if (nb < 0)
+		nb *= -1;
+	return (nb);
+}
+
+# define ABS(Value) abs(Value)
+#endif

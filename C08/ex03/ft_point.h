@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_point.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gderrien <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gderrien <gderrien@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/26 17:20:19 by gderrien          #+#    #+#             */
-/*   Updated: 2024/09/26 17:50:26 by gderrien         ###   ########.fr       */
+/*   Created: 2024/09/28 05:50:48 by gderrien          #+#    #+#             */
+/*   Updated: 2024/09/28 07:20:03 by gderrien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,4 @@ typedef struct s_point
 	int	x;
 	int	y;
 }	t_point;
-
 #endif

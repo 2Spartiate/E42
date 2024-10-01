@@ -1,17 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_abs.h                                           :+:      :+:    :+:   */
+/*   ft_point.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gderrien <gderrien@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gderrien <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/28 05:27:09 by gderrien          #+#    #+#             */
-/*   Updated: 2024/09/28 07:18:32 by gderrien         ###   ########.fr       */
+/*   Created: 2024/09/26 17:20:19 by gderrien          #+#    #+#             */
+/*   Updated: 2024/09/26 17:50:26 by gderrien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#define ABS(Value) ({ \
-    typeof(Value) _val = (Value); \
-    if (_val < 0) _val = -_val; \
-    _val; \
-})
+#ifndef FT_POINT_H
+# define FT_POINT_H
+
+typedef struct s_point
+{
+	int	x;
+	int	y;
+}	t_point;
+
+#endif
